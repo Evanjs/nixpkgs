@@ -17940,7 +17940,9 @@ in
 
   poly = callPackage ../data/fonts/poly { };
 
-  polychromatic = python3Packages.callPackage ../applications/misc/polychromatic { };
+  polychromatic = python3Packages.callPackage ../applications/misc/polychromatic {
+    meson = pkgs.meson;
+  };
 
   polytopes_db = callPackage ../data/misc/polytopes_db { };
 
